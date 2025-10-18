@@ -1,1 +1,1 @@
-
+The student tracker application for tracking students' behaviors based on the money usage, daily journal, exercise, and habits. There would be a complete web application with server-side scripting and PHP language. In addition, the application also design with good UI   design and well interaction. The website is operated with the MySQL Database
