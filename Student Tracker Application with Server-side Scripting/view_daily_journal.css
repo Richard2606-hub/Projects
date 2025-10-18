@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Audiowide", sans-serif;
+}
+
+body {
+     background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+    min-height: 100vh;
+    padding: 40px;
+    color: #222;
+}
+
+
+/* Page heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: white;
+}
+
+/* Navigation links */
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+p a:first-child {
+    background: white;
+    color: #836fff;
+    margin-right: 10px;
+    border: 2px solid #836fff;
+}
+
+p a:first-child:hover {
+    background: #836fff;
+    color: white;
+}
+
+p a:last-child {
+    background: white;
+    color: #6a0dad;
+    border: 2px solid #6a0dad;
+}
+
+p a:last-child:hover {
+    background: #6a0dad;
+    color: white;
+}
+
+/* Journal Table */
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+th {
+    background: #6a0dad;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+/* Row hover effect */
+tr:hover td {
+    background: #f3e8ff;
+}
+
+/* Actions links */
+td a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    margin: 2px;
+    display: inline-block;
+}
+
+td a[href*="update"] {
+    background: white;
+    color: #ffb347;
+     border: 2px solid #ffb347;
+}
+
+td a[href*="update"]:hover {
+    background: #ffb347;
+    color: white;
+}
+
+td a[href*="delete"] {
+    background: white;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+
+td a[href*="delete"]:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    height: calc(5vh + 30px);
+    justify-content: space-between;
+}
+
+.header div {
+    margin: 5px;
+    padding: 5px;
+    font-size: 24px;
+}

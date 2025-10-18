@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Audiowide", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+/* Container card */
+form, .status-box {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    margin: auto;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Labels & inputs */
+p {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #ff5a7b;
+}
+
+input[type="date"],
+select,
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input[type="date"]:focus,
+select:focus,
+textarea:focus,
+input[type="text"]:focus {
+    border-color: #6a0dad;
+    outline: none;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Save button */
+input[type="submit"] {
+    background: #ff5a7b;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #ff2e63;
+}
+
+/* Status message */
+.status-box {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.status-box a {
+    color: #836fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.status-box a:hover {
+    text-decoration: underline;
+}
+
+/* Back link */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6c63ff, #836fff);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: filter 0.3s ease;
+    margin-top: 10px;
+    filter: brightness(0.9); /* Slight darkening effect */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form, .status-box {
+        width: 95%;
+        padding: 20px;
+    }
+}

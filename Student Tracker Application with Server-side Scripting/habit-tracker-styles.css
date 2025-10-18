@@ -1,0 +1,294 @@
+/* Habit Tracker Styles - Cleaned and Optimized */
+
+* {
+    font-family: 'Audiowide', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+.card {
+    border: 2px solid black;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.card.centered {
+    text-align: center;
+    max-width: 600px;
+}
+
+.card.form {
+    max-width: 500px;
+}
+
+/* Page Titles */
+h1,
+h2,
+h3 {
+    text-align: left;
+    color: rgb(112, 90, 209);
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    text-align: center;
+    color: rgb(112, 90, 209);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-message h2 {
+    color: #7C3AED;
+    text-shadow: none;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #7C3AED;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #E5E7EB;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+    border-color: #7C3AED;
+}
+
+.btn,
+form button,
+form input[type="submit"] {
+    background: linear-gradient(135deg, #EF4444 0%, #F97316 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn:hover,
+form button:hover,
+form input[type="submit"]:hover {
+    transform: translateY(-2px);
+}
+
+.btn.primary {
+    background: #cc5873;
+    margin-bottom: 20px;
+}
+
+.btn.secondary {
+    background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+}
+
+.btn.small {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.dashboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard li {
+    margin: 10px 0;
+}
+
+.dashboard a {
+    min-width: 200px;
+    margin: 5px 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+th {
+    background: linear-gradient(135deg, #7C3AED 0%, #3B82F6 100%);
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #E5E7EB;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background-color: #F9FAFB;
+}
+
+tr:hover {
+    background-color: #F3F4F6;
+}
+
+/* Link Styles */
+.link,
+td a,
+p a {
+    color: #7C3AED;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 2px;
+}
+
+.link:hover,
+td a:hover,
+p a:hover {
+    transform: translateY(-1px);
+}
+
+p a{
+    background: rgba(255, 255, 255, 0.9);
+    color: #7C3AED;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+p a:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.link.edit,
+td a[href*="edit"] {
+    background: #10B981;
+    color: white;
+}
+
+.link.edit:hover,
+td a[href*="edit"]:hover {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+}
+
+.link.delete,
+td a[href*="delete"] {
+    background: #EF4444;
+    color: white;
+}
+
+.link.delete:hover,
+td a[href*="delete"]:hover {
+    background: rgba(239, 68, 68, 0.1);
+    color: #EF4444;
+}
+
+.link.action,
+td a[href*="toggle"] {
+    background: #06B6D4;
+    color: white;
+}
+
+.link.action:hover,
+td a[href*="toggle"]:hover {
+    background: rgba(6, 182, 212, 0.1);
+    color: #06B6D4;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 600px;
+    border: 2px solid;
+}
+
+.message.success {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: #10B981;
+    color: #065F46;
+}
+
+.message.error {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: #EF4444;
+    color: #7F1D1D;
+}
+
+#date_field,
+#date-filters {
+    margin-top: 10px;
+    padding: 15px;
+    background: #F3F4F6;
+    border-radius: 15px;
+}
+
+form input[type="text"][size="25"] {
+    width: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
